@@ -4,9 +4,17 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tailwind": "^4.0.0"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "scripts": {
+    "dev": "bunx @tailwindcss/cli -i ./style/style.css -o ./style/output.css --watch",
+    "build": "bunx @tailwindcss/cli -i ./style/style.css -o ./style/output.css --minify"
   }
 }
