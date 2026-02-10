@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 @theme {
-  --font-raleway: "Manrope", "sans-serif";
+  --font-sans: "Manrope", "sans-serif";
 }
