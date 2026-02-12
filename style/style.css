@@ -41,7 +41,8 @@
     .image {
       padding-block: 1.9rem;
       img {
-        margin: 0 auto;
+        margin-inline: auto;
+        margin-bottom: -14%;
       }
     }
 
