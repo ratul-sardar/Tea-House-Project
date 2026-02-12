@@ -17,6 +17,7 @@
     max-width: 1140px;
     margin: 0 auto;
   }
+
   .btn {
     background-image: var(--background-image-brand-gradient);
     color: var(--color-white);
@@ -51,4 +52,16 @@ h4 {
   font-weight: 900;
   color: var(--heading-color);
   text-transform: capitalize;
+}
+
+.py-main {
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+
+@media (min-width: 768px) {
+  .py-main {
+    padding-top: 3.8rem;
+    padding-bottom: 3.8rem;
+  }
 }
