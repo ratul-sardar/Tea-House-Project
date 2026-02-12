@@ -8,7 +8,11 @@
     #ff8938,
     #ff0000
   );
-  --color-null: red;
+  --background-image-white-to-gray: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 96%, 100),
+    hsla(0, 0%, 96%, 0)
+  );
 }
 
 @layer components {
@@ -26,6 +30,26 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: capitalize;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.65rem;
+    background-image: var(--background-image-white-to-gray);
+
+    .image {
+      padding-block: 1.9rem;
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .content {
+      background-color: white;
+      padding: 1.9rem;
+      text-align: center;
+    }
   }
 }
 
